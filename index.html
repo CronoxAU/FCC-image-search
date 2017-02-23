@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <script src="https://use.fontawesome.com/be010ebfb5.js"></script>
+    <head>
+        <title>URL Shortener Service - FreeCodeCamp Project</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                URL Shortener Service</h1>
+               <h2> A FreeCodeCamp Project by Christopher McLean
+            </h2>
+                <h2>Input for shortener creation</h2>
+                <p>A string containing the URL to the page a shortened URL is required for</p>
+                <h3>Output</h3>
+                <p>A JSON object the supplied URL (original_url) and a shortened URL (short_url) that will redirect to this location.</p>
+                <p>On invalid input (ie a string which is not a valid URL), a JSON object will be returned with both properties set to null.</p>
+                <h2>Usage examples</h2>
+            <table>
+              <tr>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td><code>https://fcc-short-url.herokuapp.com/new/http://google.com</code></td>
+                <td><code>
+                {
+                "original_url":"http://google.com",
+                "short_url":"https://fcc-short-url.herokuapp.com/guheti"
+                }
+                </code></td>
+              </tr>
+            </table>
+                <h2>Input for user redirection</h2>
+                <p>A generated shortened URL</p>
+                <h3>Output</h3>
+                <p>The user will be redirected to the original URL</p>
+                
+            <h2>Usage examples</h2>
+            <table>
+              <tr>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td><code>https://fcc-short-url.herokuapp.com/guheti</code></td>
+                <td><code>
+                redirect browser too http://google.com
+            </code></td>
+              </tr>
+            </table><br />
+                <footer class="container-fluid text-center">
+      &copy; Christopher McLean 2017.
+      <a class="btn btn-default social-btn" href="https://github.com/CronoxAU/FCC-url-shortener-service" aria-label="Github">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="btn btn-default social-btn" href="https://twitter.com/cjmclean" aria-label="Twitter">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="btn btn-default social-btn" href="https://www.linkedin.com/in/christopher-mclean-89867954" aria-label="LinkedIn">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a><br />Created as a project for <a href="https://www.freecodecamp.com">FreeCodeCamp</a>
+    </footer>
+        </div>
+    </body>
+</html>
